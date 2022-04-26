@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF CSS RESET */
+main {
+    background-color: hsl(213deg 18% 16%);
+    padding: 30px 25px;
+    width: 280px;
+    margin: 8rem auto;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.star-icon {
+    background-color: hsl(213deg 18% 21%);
+    padding: 12px 16px;
+    border-radius: 25px;
+    width: 15px;
+}
+
+h1 {
+    color: var(--White);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+p {
+    color: var(--Medium-Grey);
+    font-size: 14px;
+    line-height: 1.4;
+    transition: 0.3s;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+ul > li {
+    background-color: hsl(213deg 18% 23%);
+    width: 42px;
+    height: 42px;
+    color: var(--Light-Grey);
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+ul > li > p {
+    padding: 12px;
+    text-align: center;
+}
+
+ul > li:hover {
+    cursor: pointer;
+    background-color: var(--Orange);
+}
+
+li:hover p {
+    color: white;
+}
+
+.clicked {
+    background-color: var(--Medium-Grey);
+}
+
+.fontClicked {
+    color: white;
+}
+
+button {
+    width: 100%;
+    color: white;
+    border: none;
+    background-color: var(--Orange);
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--Orange);
+}
+
+.say-thanks > img {
+    display: block;
+    margin: auto;
+}
+
+.notif {
+    background-color: hsl(213deg 18% 21%);
+    /* padding: 12px 16px; */
+    width: 167px;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.notif > p {
+    padding: 5px 7px;
+    color: var(--Orange);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.say-thanks > h1, .say-thanks > p {
+    text-align: center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
