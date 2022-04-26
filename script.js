@@ -20,7 +20,7 @@ for(let i=0; i<rating.length; i++){
 
 button.addEventListener("click", function(){
     if(Star === undefined){
-        alert("Select rating first!");
+        button.disabled = false;
     }
     else{
         mainContent.innerHTML = `
