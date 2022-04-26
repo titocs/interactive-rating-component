@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    min-height: 100vh;
+    height: 100%;
     font-family: 'Overpass', sans-serif;
     background-color: var(--Very-Dark-Blue);
 }
